@@ -5,7 +5,8 @@ interface GraphData {
   name: string;
   total: number;
 }
-
+// eslint-disable-next-line
+// @ts-ignore
 export const getGraphRevenue = async (
   storeId: string
 ): Promise<GraphData[]> => {
