@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: 'build',
   basePath: "/wings-cms",
   assetPrefix: "/wings-cms/",
   images: {

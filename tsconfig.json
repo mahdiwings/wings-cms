@@ -1,19 +1,23 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "noEmit": false,
-     "noEmitOnError": false,
-     "isolatedModules": true,
-     "strict": false,
-     "noImplicitAny": false,
-     "noImplicitThis": false,
-     "alwaysStrict": false,
-     "skipLibCheck": true,
-     "noUnusedLocals": false,
+    "noEmitOnError": false,
+    "isolatedModules": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": false,
-     "strictNullChecks": false,
+    "strictNullChecks": false,
     // "skipLibCheck": true,
     // "strict": false,
     // "noEmit": true,
@@ -32,9 +36,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

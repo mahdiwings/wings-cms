@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tsc --noEmit && next build",
+    "build": "next build",
     "export": "next export",
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out"
