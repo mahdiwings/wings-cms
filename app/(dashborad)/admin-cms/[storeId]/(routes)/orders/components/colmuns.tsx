@@ -1,14 +1,17 @@
 import { ColumnDef } from "@tanstack/react-table";
 
 export type OrderColumn = {
-  _id: string;
-  phoneNumber: string;
-  address: string;
-  isPaid: boolean;
+  id: any;
+  fullName: any;
+  phone: any;
+  email: any;
+  address: any;
+  zipCode: any;
   totalPrice: string;
-  zipCode: string;
-  products: string;
-  createdAt: string;
+  color: any;
+  size: any;
+  products: any;
+  isPaid: any;
 };
 
 export const columns: ColumnDef<OrderColumn>[] = [

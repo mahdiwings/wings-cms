@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
+          // @ts-ignore
 
 const TokenChecker: React.FC = ({ children }) => {
   useEffect(() => {

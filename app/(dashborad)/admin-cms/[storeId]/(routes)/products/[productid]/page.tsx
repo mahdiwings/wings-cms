@@ -1,9 +1,13 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import { ProductForm } from "./components/product-form";
 import axios from "axios";
 
-const ProductPage = ({ params }: { params: { productId: string } }) => {
+const ProductPage = ({
+  params,
+}: {
+  params: { productid: string; storeId: string };
+}) => {
   const [product, setProduct] = useState(null);
   const [categories, setCategories] = useState([]);
   const [sizes, setSizes] = useState([]);
@@ -75,7 +79,6 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
       }
     };
     fetchBillboardAndCategoriesData();
-
   }, []);
 
   // console.log(billboards);
@@ -90,7 +93,7 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
   //       images: true,
   //     },
   //   });
-  
+
   // const categories = await prismadb.category.findMany({
   //   where: {
   //     storeId: params.storeId,

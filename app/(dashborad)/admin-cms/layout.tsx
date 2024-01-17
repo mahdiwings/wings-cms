@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { constants } from "crypto";
 import { useStoreModal } from "@/hooks/use-store-modal";
 
-const AdminLayout: React.FC = ({ children }) => {
+const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [IsStore, setTsStore] = useState(true);
   const router = useRouter();
   // ! Authortion

@@ -68,6 +68,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
     if (selectedFile) {
       try {
         const signedUrl = await uploadFiles(selectedFile, selectedFile.name);
+          // @ts-ignore
         onChange(signedUrl);
         // onChange([...value, signedUrl]);
         setSelectedFile(null);

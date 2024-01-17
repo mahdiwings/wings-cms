@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { CategoryForm } from "./components/category-form";
 import axios from "axios";
 
-const CategoryPage = ({ params }: { params: { categorieId: string , storeId: string} }) => {
+const CategoryPage = ({ params }: { params: { categoryId: string , storeId: string} }) => {
   //     const Category = await prismadb.Category.findUnique({
   //     where: {
   //       id: params.CategoryId,

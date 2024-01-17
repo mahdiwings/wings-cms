@@ -202,6 +202,7 @@ export const ProductForm = ({ initialData, categories, sizes, colors }) => {
                     }
                     onRemove={(url) =>
                       field.onChange([
+        // @ts-ignore
                         ...field.value.filter((current) => current.url !== url),
                       ])
                     }
